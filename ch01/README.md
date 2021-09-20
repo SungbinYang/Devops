@@ -1,3 +1,18 @@
+## DevOps의 필요성
+
+- 2008년 애자일 컨퍼런스에서 앤드루 클레이 쉐이퍼(Andrew Clay Shafer)와 패트릭 드부와(Patrick Debios)가 "애자일 인프라스트럭처"에 대해 논의하며 처음으로 사용
+- 소통, 협업, 통합 및 자동화를 강조하는 소프트웨어 개발 방법론
+- 개발과 운영이 상호의존적으로 대응해야 한다는 의미
+- 개발과 운영 사이의 역할
+- 툴 체인
+  - Jira
+  - Confluence
+  - Bitbucket
+  - Jenkins
+- 업무환경 (클라우드)
+  - CLOUD SERVER (EC2, S3, RDS)
+  - Docker
+
 ## AWS와 Docker의 필요성
 
 - AWS
