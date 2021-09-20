@@ -28,7 +28,7 @@
 - 구성 (IaC) : 인프라 구축 단계, 초기 개발시에 보안 및 장애를 대비할수 있는 단계
   - 코드 -> 빌드 -> 테스트 -> 패키징(ex. war) -> 릴리즈(운영서버에 반영하는 단계) -> 모니터링(로그 분석등) -> 코드...
 
-## AWS와 Docker의 필요성
+## AWS와 Docker의 필요성.
 
 - AWS
   - 클라우드 서버 구축 서비스
@@ -65,14 +65,14 @@
   - S3
   - EBS(Elastic Block Store)
 - DataBase
-  - RDS
+  - RDS(ex. mysql, mariadb, postgresql)
   - DynamoDB
   - RedShift
   - AuroraDB
 - Management
-  - Cloud Watch
+  - Cloud Watch : 어플리케이션 전반적인 로깅 작업이 가능
 - Analysis
-  - Kinesis
+  - Kinesis : 실시간 데이터 수집 및 완전 관리형
 
 ## Docker의 장점
 
