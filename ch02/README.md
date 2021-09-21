@@ -91,3 +91,5 @@
 },…
 ```
 - 지라 API : https://docs.atlassian.com/software/jira/docs/api/REST/8.4.2/?_ga=2.93052573.1639889686.1571238783-647032862.1567516016
+![스크린샷 2021-09-22 오전 1 58 00](https://user-images.githubusercontent.com/18282470/134214701-064e30da-8bad-4c45-b2c5-c9d929ef32dc.png)
+
