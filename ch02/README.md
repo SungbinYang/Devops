@@ -15,6 +15,7 @@
 - Jira가 용량을 많이 사용함으로 인스턴스 유형은 t2-large 선택
 - 인스턴스 생성 마지막 단계로 키페어 등록해야함.
 - 키페어는 잘 보관해야함
+  ![스크린샷 2021-09-22 오전 12 37 44](https://user-images.githubusercontent.com/18282470/134202060-04322169-4afc-4597-989b-439cf4e1a29a.png)
 - 다음으로 터미널로 접속
   ```bash
     ssh -i chicken.pem  ec2-user@13.125.234.161
@@ -53,3 +54,5 @@
   ```bash
     docker start --attach "jira-container"
   ```
+
+![스크린샷 2021-09-22 오전 12 24 29](https://user-images.githubusercontent.com/18282470/134202090-b8297c6b-fe2d-4a73-b0fc-04597139ade9.png)
