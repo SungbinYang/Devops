@@ -56,3 +56,7 @@
   ```
 
 ![스크린샷 2021-09-22 오전 12 24 29](https://user-images.githubusercontent.com/18282470/134202090-b8297c6b-fe2d-4a73-b0fc-04597139ade9.png)
+
+## Jira 이슈 이해하기
+![스크린샷 2021-09-22 오전 1 06 18](https://user-images.githubusercontent.com/18282470/134206715-873e470b-e93c-4ec7-846e-145d3f405e1c.png)
+
