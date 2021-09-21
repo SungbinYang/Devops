@@ -8,3 +8,4 @@ AWS &amp; Docker를 활용한 Devops 구축
 
 ## 02. 협업 툴 활용
  - Jira 협업툴 소개
+ - Jira 협업툴 설치
