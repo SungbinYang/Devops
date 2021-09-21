@@ -10,3 +10,4 @@ AWS &amp; Docker를 활용한 Devops 구축
  - Jira 협업툴 소개
  - Jira 협업툴 설치
  - AWS 설치 및 제거 요강
+ - Jira 이슈 이해하기
