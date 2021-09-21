@@ -12,3 +12,4 @@ AWS &amp; Docker를 활용한 Devops 구축
  - AWS 설치 및 제거 요강
  - Jira 이슈 이해하기
  - Jira API 소개 및 Postman 활용하기
+ - Jira 관리자 소개
