@@ -60,3 +60,34 @@
 ## Jira 이슈 이해하기
 ![스크린샷 2021-09-22 오전 1 06 18](https://user-images.githubusercontent.com/18282470/134206715-873e470b-e93c-4ec7-846e-145d3f405e1c.png)
 
+## Jira API 소개 및 Postman 활용하기
+- 지라 API ?
+  * Application Programming Interface  - API 란 어플리케이션 프로그래밍 인터페이스
+- 지라 API : https://docs.atlassian.com/software/jira/docs/api/REST/8.4.2/?_ga=2.93052573.1639889686.1571238783-647032862.1567516016
+- 지라 API : ISSUE
+  * api/2/issue 
+  * Create issue		POST /rest/api/2/issue
+  * Create issues		POST /rest/api/2/issue/bulk
+  * Get issue		GET /rest/api/2/issue/{issueIdOrKey}
+  * Delete issue		DELETE /rest/api/2/issue/{issueIdOrKey}
+  * Edit issue		PUT /rest/api/2/issue/{issueIdOrKey}
+- [POSTMAN](https://www.getpostman.com/)
+![스크린샷 2021-09-22 오전 1 20 36](https://user-images.githubusercontent.com/18282470/134208817-85f8fdf2-d8ab-47a8-bb01-bc69c61e4286.png)
+``` json
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "10000",
+  "self": "http://13.124.208.168:8080/rest/api/2/issue/10000",
+  "key": "BLO-1",
+  "fields": {
+    "issuetype": {
+        "self": "http://13.124.208.168:8080/rest/api/2/issuetype/10100",
+        "id": "10100", 
+        "description": "개발 목적 및 개발 상태 관리",
+        "iconUrl": "http://13.124.208.168:8080/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+        "name": "관리 이슈",
+        "subtask": false,
+        "avatarId": 10311
+},…
+```
+- 지라 API : https://docs.atlassian.com/software/jira/docs/api/REST/8.4.2/?_ga=2.93052573.1639889686.1571238783-647032862.1567516016
