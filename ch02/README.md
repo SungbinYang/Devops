@@ -200,3 +200,5 @@
   ``` bash
     docker exec -it jira-container /bin/bash
   ```
+
+![스크린샷 2021-09-22 오후 4 22 35](https://user-images.githubusercontent.com/18282470/134300291-91284c9e-1536-460f-b1cf-3ede5a33baa6.png)
