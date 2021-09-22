@@ -16,3 +16,4 @@ AWS &amp; Docker를 활용한 Devops 구축
  - Jira 워크 플로우 설정하기
  - Jira CustomField 설정하기
  - Jira DB 구조 설명
+ - Confluence 협업툴 소개
