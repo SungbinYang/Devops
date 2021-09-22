@@ -149,3 +149,9 @@
 ## Confluence 협업툴 소개
 - Atlassian
   * Confluence
+
+![스크린샷 2021-09-22 오후 3 25 32](https://user-images.githubusercontent.com/18282470/134293328-e6f66a78-b8b2-4d1d-89cf-53e053160f35.png)
+
+- 나를 위한 변경사항 관리를 손 쉽게 할 수 있다.
+- 다양하고 강력한 검색 기능
+
