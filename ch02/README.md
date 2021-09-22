@@ -114,5 +114,6 @@
 - 상태 추가
 - 전환 추가
 
+![스크린샷 2021-09-22 오전 11 15 38](https://user-images.githubusercontent.com/18282470/134273177-d967c66c-89c8-424e-aa5d-a319c5c378dc.png)
 
 
