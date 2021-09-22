@@ -106,9 +106,11 @@
 
 ## Jira 워크 플로우 설정하기
 - 이슈 계획
+ 
  ![스크린샷 2021-09-22 오전 9 34 00](https://user-images.githubusercontent.com/18282470/134265234-b7927356-7ec5-4ff8-9671-869316422c83.png)
  ![스크린샷 2021-09-22 오전 9 37 08](https://user-images.githubusercontent.com/18282470/134265456-2c23c897-13dc-4efe-ae99-87e4557ac1a1.png)
  ![스크린샷 2021-09-22 오전 9 38 26](https://user-images.githubusercontent.com/18282470/134265540-50b9f56b-294d-42a0-bb57-8cfa3372b47b.png)
+ 
 - 상태 추가
 - 전환 추가
 
