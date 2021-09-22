@@ -127,3 +127,24 @@
 
 ![스크린샷 2021-09-22 오후 2 09 05](https://user-images.githubusercontent.com/18282470/134286663-9508a14e-edb3-48db-9fd2-aadadec2bc51.png)
 
+## Jira DB 구조 설명
+- [JIRA 공식 DB 스키마 사이트](https://developer.atlassian.com/server/jira/platform/attachments/jira-7-9-2-database-schema.pdf)
+- Jira DB 테이블
+  * ISSUE 관련 테이블 : JIRAISSUE, ISSUESTATUS
+  * PROJECT 테이블 : PROJECT
+  * 커스텀 필드 테이블 : CUSTOMFIELD, CUSTOMFIELDVALUE, CUSTOMFIELDOPTION
+  * ISSUE 링크 테이블 : ISSUELINK
+  * ISSUE 관련 테이블 : JIRAISSUE, ISSUESTATUS
+
+![스크린샷 2021-09-22 오후 2 13 46](https://user-images.githubusercontent.com/18282470/134286989-651cd161-0949-448b-88e1-2beecfa67924.png)
+
+![스크린샷 2021-09-22 오후 2 16 17](https://user-images.githubusercontent.com/18282470/134287172-0ac5c305-baa2-4533-98d0-6649571a7956.png)
+
+![스크린샷 2021-09-22 오후 2 17 13](https://user-images.githubusercontent.com/18282470/134287243-5d3b9072-a834-40ce-acd3-73bfae0c5a6c.png)
+
+![스크린샷 2021-09-22 오후 2 17 33](https://user-images.githubusercontent.com/18282470/134287266-cc1453ec-b42e-47c2-a4f3-d2841cabd999.png)
+
+![스크린샷 2021-09-22 오후 2 17 54](https://user-images.githubusercontent.com/18282470/134287324-d3b1b6b8-4b6e-45b7-a069-bf078f55f8e2.png)
+
+
+
