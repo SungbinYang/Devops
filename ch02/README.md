@@ -156,7 +156,47 @@
 - 다양하고 강력한 검색 기능
 
 ## Confluence 협업툴 사용방법
-- ssh -i chicken.pem ec2-user@13.124.208.168
+- E2C 접속
   ``` bash
     ssh -i chicken.pem ec2-user@13.124.208.168
+  ```
+- 도커 리스트 확인
+  ``` bash
+    docker ps -a
+  ```
+- 기존 컨플루언스 도커 컨테이너 삭제
+  ``` bash
+    docker rm --volumes --force "confluence"
+  ```
+- 컨풀루언스 도커 컨테이너 설치
+  ``` bash
+    docker pull atlassian/confluence-server
+  ```
+- 컨플루언스 도커 컨테이너 생성 및 실행
+  ``` bash
+    docker run -e JVM_SUPPORT_RECOMMENDED_ARGS=-Djavax.net.ssl.trustStore=/var/atlassian/application-data/confluence/cacerts -v       confluenceVolume:/var/atlassian/application-data/confluence --name="confluence" -d -p 8090:8090 -p 8091:8091 atlassian/confluence-server
+  ```
+- 컨플루언스 도커 컨테이너 접속 명령어
+  ``` bash
+    docker exec -it confluence /bin/bash
+  ```
+- 기존 지라 도커 컨테이너 삭제
+  ``` bash
+    docker rm --volumes --force "jira-container"
+  ```
+- 지라 도커 컨테이너 설치
+  ``` bash
+    docker create -it --name "jira-container"   
+    --publish "8080:8080"  
+    --volume "hostpath:/var/atlassian/jira"   
+    --env "CATALINA_OPTS= -Xms2048m -Xmx2048m -Datlassian.plugins.enable.wait=300"   
+    cptactionhank/atlassian-jira-software:latest 
+  ```
+- 지라 도커 컨테이너 실행
+  ``` bash
+    docker start --attach "jira-container"
+  ```
+- 지라 도커 컨테이너 접속 명령어
+  ``` bash
+    docker exec -it jira-container /bin/bash
   ```
