@@ -155,3 +155,8 @@
 - 나를 위한 변경사항 관리를 손 쉽게 할 수 있다.
 - 다양하고 강력한 검색 기능
 
+## Confluence 협업툴 사용방법
+- ssh -i chicken.pem ec2-user@13.124.208.168
+  ``` bash
+    ssh -i chicken.pem ec2-user@13.124.208.168
+  ```
