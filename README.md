@@ -14,3 +14,4 @@ AWS &amp; Docker를 활용한 Devops 구축
  - Jira API 소개 및 Postman 활용하기
  - Jira 관리자 소개
  - Jira 워크 플로우 설정하기
+ - Jira CustomField 설정하기
