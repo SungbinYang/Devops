@@ -27,3 +27,6 @@ AWS &amp; Docker를 활용한 Devops 구축
 - 빗버킷 소개
 - 빗버킷 활용
 - 빗버킷 실습
+
+## 05. Jenkins
+- Jenkins 소개 및 설치
