@@ -31,3 +31,6 @@ AWS &amp; Docker를 활용한 Devops 구축
 ## 05. Jenkins
 - Jenkins 소개 및 설치
 - Jenkins 배포 및 파이프라인
+
+## 06. AWS Server
+- RDS 설정
