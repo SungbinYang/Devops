@@ -4,7 +4,6 @@ package me.sungbin.review.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 import org.springframework.web.servlet.resource.PathResourceResolver;
 
 @Configuration
@@ -17,6 +16,8 @@ public class StaticResourceConfiguration  implements WebMvcConfigurer {
 	        "classpath:/static/", 
 	        "classpath:/public/" };
 
+
+    
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
     	if (!registry.hasMappingForPattern("/**")) {
@@ -26,6 +27,9 @@ public class StaticResourceConfiguration  implements WebMvcConfigurer {
 	                .setCachePeriod(3600)
 	                .resourceChain(true)
 	                .addResolver(new PathResourceResolver());
+
     	}
+      
     }
+  
 }

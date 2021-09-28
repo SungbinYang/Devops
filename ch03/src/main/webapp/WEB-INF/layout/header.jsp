@@ -30,7 +30,7 @@
 </style>
 <div class="header">
 	<div class="headerWrapper">
-	<div class="logo">ONREV</div>
+	<div class="logo">OffREV</div>
 	</div>
 </div>
 
