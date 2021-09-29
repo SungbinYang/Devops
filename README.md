@@ -34,3 +34,4 @@ AWS &amp; Docker를 활용한 Devops 구축
 
 ## 06. AWS Server
 - RDS 설정
+- S3 설정 및 이미지 업로드
