@@ -5,8 +5,7 @@
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 <style>
-	
-	
+
 	.loginWrapper{
 		margin-top: 50px;
 		margin-left:auto;
@@ -84,18 +83,45 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
-	Kakao.init('b30526376249afa40b9d4f5c977a841f');
+	<c:if test="${ user == null }" >
+	Kakao.init('8c12ea928faf95441620a1c3eda08d70');
     // 카카오 로그인 버튼을 생성합니다.
     Kakao.Auth.createLoginButton({
       container: '#kakao-login-btn',
       success: function(authObj) {
-        alert(JSON.stringify(authObj));
+       Kakao.API.request({url:'/v2/user/me',
+    	   success:function (res){
+               alert(JSON.stringify(res));
+    		   var id = res.id;
+    		   var email = (res.kaccount_email ? res.kaccount_email : '');
+    		   var nickname = (res.properties && res.properties.nickname ? res.properties.nickname : '');
+
+    		   alert(id);
+    		   alert(email);
+    		   alert(nickname);
+    		   nickname = '비니';
+
+    		   $("#logininfo").text(nickname);
+    		   $.post("/kakaoLogin",
+	   			   {id:id, email : email, nickname : nickname}
+	   			 	, function (data){
+	   			 		if(data === 1){
+	   			 			alert("로그인이 완료 되었습니다.");
+	   			 			$("#kakao-login-btn").hide();
+	   			 		}
+	   			 	}
+    		   )
+    	   },
+    	   fail:function (error){
+
+    	   }})
+
       },
       fail: function(err) {
          alert(JSON.stringify(err));
       }
     });
-    
+    </c:if>
     var slideAelements = $('.slide-child')
     
     
@@ -125,40 +151,40 @@ $(document).ready(function(){
 		<div class="slide-child">오프라인 후기 정보들을</div>
 		<div class="slide-child">모아모아 제공합니다.</div>
 	</div>
+	<c:if test="${ user == null }" >
 	<div id="kakao-login-btn">
 		
 	</div>
-	
+	</c:if>
 	
 </div>
 
 <div class="itemListWrapper">
 <div class="itemList slide-child">
-   <div class="imageArea"><img src="img/img1.jpg"/></div>
+   <div class="imageArea"><img src="<c:out value="${ reviewList[0].s3ImageUrl }" />"/></div>
    <div class="reviewArea">
    	  <div class="reviewTitle" ><c:out value="${ reviewList[0].title }" /> </div>
       <textarea readonly><c:out value="${ reviewList[0].content }" /></textarea>
    </div>
 </div>
 <div class="itemList slide-child">
-   <div class="imageArea"><img src="img/img2.jpg"/></div>
+   <div class="imageArea"><img src="<c:out value="${ reviewList[1].s3ImageUrl }" />"/></div>
    <div class="reviewArea">
   	  <div class="reviewTitle" ><c:out value="${ reviewList[1].title }" /> </div>
-      <textarea readonly><c:out value="${reviewList[1].content}" /></textarea>
+      <textarea readonly><c:out value="${ reviewList[1].content }" /></textarea>
 
    </div>
 </div>
 <div class="itemList slide-child">
-   <div class="imageArea"><img src="img/img3.jpg"/></div>
+   <div class="imageArea"><img src="<c:out value="${ reviewList[2].s3ImageUrl }" />"/></div>
    <div class="reviewArea" >
       <div class="reviewTitle" ><c:out value="${ reviewList[2].title }" /> </div>
-      <textarea readonly><c:out value="${reviewList[2].content}" /></textarea>
+      <textarea readonly><c:out value="${ reviewList[2].content }" /></textarea>
    </div>
 </div> 
 
 </div>
 
-
-
 </body>
 </html>
+

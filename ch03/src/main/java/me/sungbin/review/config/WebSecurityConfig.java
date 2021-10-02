@@ -1,25 +1,12 @@
 package me.sungbin.review.config;
 
-import java.io.IOException;
-import java.util.Properties;
-
-import javax.servlet.ServletException;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-
-
 
 @Configuration
 @EnableWebSecurity
@@ -32,13 +19,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             "/fonts/**",
             "/resources/**"
         };
- 
-	
+
 	@Autowired
 	private Environment env;
 
-    
-	
     @Override
     protected void configure(HttpSecurity http) throws Exception {
        
@@ -48,6 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.and()
 		.authorizeRequests()
 		 	.antMatchers(staticResources).permitAll()
+		 	.antMatchers("/kakaoLogin").permitAll()
 		 	.anyRequest().authenticated()
 			.and()
 
@@ -63,10 +48,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         	.permitAll();
     }
 
-	 
-
-
-
 	@Override
     public void configure(WebSecurity web) throws Exception {
       web
@@ -74,5 +55,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
            .antMatchers(staticResources); 
     }
 
-   
 }
