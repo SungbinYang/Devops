@@ -5,7 +5,8 @@
 - Language: Java 8
 - IDE: Intellij
 - view: jsp
-- Framework: Spring Boot
+- Framework: Spring Boot, Spring Security
+- ORM: MyBatis
 
 ## 프로젝트 세팅
 - JAVA 설치
