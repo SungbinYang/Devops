@@ -36,3 +36,4 @@ AWS &amp; Docker를 활용한 Devops 구축
 - RDS 설정
 - S3 설정 및 이미지 업로드
 - 카카오 로그인
+- S3로 이미지 업로드 및 API 활용
