@@ -21,8 +21,8 @@ import me.sungbin.review.login.vo.ReviewVO;
 @Service
 public class AwsS3Service {
 	private static final String BUCKET_NAME = "reviewsaws";
-	private static final String ACCESS_KEY = "AKIAQSHNZGJGVA72T67H";
-	private static final String SECRET_KEY = "VRqAHHnZydU2ubdcmMMyhdLHGt/hFzyTBtGdHK6V";
+	private static final String ACCESS_KEY = ""; // insert your access key
+	private static final String SECRET_KEY = ""; // insert your secret key
 	
 	private AmazonS3 s3;
 	
