@@ -1,7 +1,8 @@
 package me.sungbin.review.login.mapper;
 
-import me.sungbin.review.login.vo.UserVO;
 import org.apache.ibatis.annotations.Mapper;
+
+import me.sungbin.review.login.vo.UserVO;
 
 @Mapper
 public interface UserMapper {

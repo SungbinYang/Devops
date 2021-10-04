@@ -25,22 +25,20 @@
 	.logo{
 		padding-top:15px;
 		font-weight:bold;
-    	color: #010101;
+    	color: #FFF;
     	float:left;
 	}
 	.logininfo{
 	    width: 150px;
-	    height: 20px;
-		text-align: center;
+	    height: 50px;
 	    float: right;
-	    padding: 15px;
+	    color: #FFF;
+	    padding: 12px;
 	}
 </style>
 <div class="header">
 	<div class="headerWrapper">
-		<div class="logo">OffREV
-		
-		</div>
+		<div class="logo">OffREV</div>
 		<div id="logininfo" class="logininfo">
 				
 		<c:if test="${ user != null }" >

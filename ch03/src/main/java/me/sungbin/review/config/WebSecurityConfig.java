@@ -25,7 +25,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-       
     	http
     	.csrf().disable()
 		.headers()
@@ -33,6 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.authorizeRequests()
 		 	.antMatchers(staticResources).permitAll()
 		 	.antMatchers("/kakaoLogin").permitAll()
+		 	.antMatchers("/fileUpload").permitAll()
 		 	.anyRequest().authenticated()
 			.and()
 
@@ -40,7 +40,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.and()
 		.formLogin() 
 			.loginPage("/login")
-			.defaultSuccessUrl("/")
+			.defaultSuccessUrl("/login")
 			.permitAll()
 			.and()
 		.logout()
@@ -54,5 +54,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .ignoring()
            .antMatchers(staticResources); 
     }
-
 }

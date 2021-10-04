@@ -1,4 +1,5 @@
 package me.sungbin.review.login.vo;
+
 import lombok.Data;
 
 @Data
@@ -8,5 +9,5 @@ public class ReviewVO {
 	String title;
 	String content;
 	String s3ImageUrl;
-	
+	String userId;
 }

@@ -18,6 +18,5 @@
 		 email =  #{email}
 			
 	</update>
-	
-	
+
 </mapper>

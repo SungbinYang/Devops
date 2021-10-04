@@ -12,7 +12,8 @@ public class UserService {
 	private UserMapper userMapper;
 
 	public int updateUserJoin(UserVO userVO) {
-		
 		return userMapper.updateUserJoin(userVO);
 	}
+	
+	
 }
