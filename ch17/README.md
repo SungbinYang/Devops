@@ -48,5 +48,3 @@ pipeline {
 }
 ```
 - 젠킨스 >  aws_pipeline >  Build Now
-
-![스크린샷 2021-10-05 오후 10 28 38](https://user-images.githubusercontent.com/18282470/136032369-7b368657-f1cf-4a6a-8487-2dfc33debe0e.png)
