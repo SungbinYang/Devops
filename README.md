@@ -39,3 +39,6 @@ AWS &amp; Docker를 활용한 Devops 구축
 - S3로 이미지 업로드 및 API 활용
 - 지라 이슈 ID, BitBucket 연결
 - Jenkins Pipe Line 만들기
+
+## 07. DOCKER 활용하기
+- 도커 섪치하기 & 컨테이너 접속하기
