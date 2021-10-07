@@ -41,4 +41,4 @@ AWS &amp; Docker를 활용한 Devops 구축
 - Jenkins Pipe Line 만들기
 
 ## 07. DOCKER 활용하기
-- 도커 섪치하기 & 컨테이너 접속하기
+- 도커 설치하기 & 컨테이너 접속하기
